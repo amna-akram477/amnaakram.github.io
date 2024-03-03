@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white; 
+            color: #333; 
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333; 
+            color: white; 
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(88, 192, 226);
+            border: 1px solid black; 
+        }
+        form {
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Arial Black", sans-serif; 
+            color: #c0c0c0; 
+            margin-top: 0; 
+        }
+        h2, h3 {
+            font-family: "Arial Black", sans-serif; 
+            color: #444; 
+            margin-top: 0; 
+        }
+        p {
+            font-size: 16px; 
+            line-height: 1.6; 
+            margin-bottom: 20px; 
+        }
+        mark {
+            background-color: #ffc107; 
+        }
+        time {
+            font-style: italic; 
+        }
+
+        /* Responsive layout styles */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+
+        @keyframes slideIn { /*animation*/
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        header { /*header animation */
+            animation: slideIn 1s ease-in-out;
+        }
+        nav ul li a {
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #ffc107; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My website</h1> <!--website name-->
+    </header>
+    <nav> <!--navigation menu-->
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>Welcome to our company, where innovations meets excellence. Discover our cutting edge solutions for the technology industry</p> 
+
+        <section>
+            <h2>About Our Company</h2>
+            <p>
+                We are a leading company in the field of technology solutions, dedicated to providing innovative products and services to our customers
+            </p>
+        </section>
+        <section>
+            <h3>Our Services</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>App Development</li>
+            </ul>
+        </section>
+        <p>Our core services encompass <mark>software development</mark>, <mark>cloud computing</mark>, and <mark>cybersecurity solutions</mark></p>
+
+        <p>Article published on <time datetime="29/02/2024">29th February, 2024</time></p> 
+
+        <h3>Canvas</h3> <!--canvas-->
+        <canvas id="mycanvas"></canvas>
+
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="youre-a-wizard.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Video</h2>
+        <video controls width="320" height="240">
+            <source src="yt5s.io-That's What She Said Meme (The Office).mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        <h3>Submit your information here</h3> <!--form-->
+        <form action="/submit_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="contact number">Contact Number:</label>
+            <input type="number" id="number" name="number" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>Follow us on social media:</p>
+        <a href="https://example.com/twitter" target="_blank">Twitter</a>
+        <a href="https://example.com/instagram" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
